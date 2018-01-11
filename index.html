@@ -5,9 +5,26 @@
   <meta charset="utf-8"/>
   <style>
 
+    #grid {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+    }
+
+    #grid ol{
+      padding-left: 44px;
+      padding-right: 15px;
+    }
+
+    #article{
+      padding: 20px;
+    }
+
     h1{
       font-size: 80px;
       text-align: center;
+      border-bottom: 1px gray solid;
+      margin: 0px;
+      padding: 20px;
     }
 
     a{
@@ -15,32 +32,62 @@
       text-decoration: none;
     }
 
+    ol{
+      border-right: 1px gray solid;
+      margin: 0px;
+      width: 150px;
+      padding: 25px;
+      line-height: 40px;
+    }
+
+    ul{
+      line-height: 20px;
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+
+    body{
+      margin: 0px;
+    }
+
+    #ul li{
+      margin-left: -15px;
+    }
+
+    .list1{
+      font-size: 20px;
+    }
+
   </style>
 </head>
 
 <body>
-  <h1><a href="index.html" style="color:red; text-decoration:underline;">WEB</a></h1>
+  <h1><a href="index.html" style="color:pink; text-decoration:none;">WEB</a></h1>
 
-  <ol>
-    <li><a href="html.html"> HTML</a></li>
-    <li><a href="css.html"> CSS
-      <ul>
-        <li>
-          <a href="box.html">css box model</a>
-        </li>
-      </ul></a>
-    </li>
-    <li><a href="js.html"> JavaScript </a></li>
-  </ol>
+  <div id="grid">
+    <ol>
+      <li><a href="html.html" class="list1"> HTML</a></li>
+      <li><a href="css.html" class="list1"> CSS
+        <ul id="ul">
+          <li><a href="box.html" style="margin-left: -5px">css box model</a></li>
+          <li><a href="grid.html" style="margin-left: -5px">grid</a></li>
+        </ul></a>
+      </li>
+      <li><a href="js.html" class="list1"> JavaScript </a></li>
+    </ol>
 
-  <h2>WEB</h2>
-  <p>
-    The World Wide Web(abbreviated WWW or the Web) is an information space where documents and other web resources are indentified by Uniform Resource Locators(URLs), interlinked by hypertext links, and can be accessed via the internet[1].
-    <!--월드 와이드 웹 (WWW 또는 웹)은 문서 및 기타 웹 자원이 URL (Uniform Resource Locators)에 의해 식별되고 하이퍼 텍스트 링크로 상호 링크되며 인터넷을 통해 액세스 할 수있는 정보 공간입니다-->
-    English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland[2][3].
-    <!--영국 과학자 팀 버너스 - 리 (Tim Berners-Lee)는 1989 년 월드 와이드 웹 (World Wide Web)을 발명했습니다. 그는 1990 년 스위스의 CERN에서 근무하면서 최초의 웹 브라우저 컴퓨터 프로그램을 작성했습니다-->
-    The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-    <!-- 웹 브라우저는 1991년 1월 다른 연구 기관을 시작으로 1991년 8월 일반인에게 배포-->
-  </p>
+    <div id="article">
+      <h2>WEB</h2>
+      <p>
+        The World Wide Web(abbreviated WWW or the Web) is an information space where documents and other web resources are indentified by Uniform Resource Locators(URLs), interlinked by hypertext links, and can be accessed via the internet[1].
+        <!--월드 와이드 웹 (WWW 또는 웹)은 문서 및 기타 웹 자원이 URL (Uniform Resource Locators)에 의해 식별되고 하이퍼 텍스트 링크로 상호 링크되며 인터넷을 통해 액세스 할 수있는 정보 공간입니다-->
+        English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland[2][3].
+        <!--영국 과학자 팀 버너스 - 리 (Tim Berners-Lee)는 1989 년 월드 와이드 웹 (World Wide Web)을 발명했습니다. 그는 1990 년 스위스의 CERN에서 근무하면서 최초의 웹 브라우저 컴퓨터 프로그램을 작성했습니다-->
+        The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+        <!-- 웹 브라우저는 1991년 1월 다른 연구 기관을 시작으로 1991년 8월 일반인에게 배포-->
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>

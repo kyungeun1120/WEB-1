@@ -5,9 +5,49 @@
   <meta charset="utf-8"/>
   <style>
 
+    #grid {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    }
+
+    #grid ol{
+    padding-left: 44px;
+    padding-right: 15px;
+    }
+
+    #article{
+    padding: 20px;
+    }
+
+    #ul li{
+      margin-left: -15px;
+    }
+
+    .list1{
+      font-size: 20px;
+    }
+
+
+    ol{
+      border-right: 1px gray solid;
+      margin: 0px;
+      width: 150px;
+      padding: 25px;
+      line-height: 40px;
+    }
+
+    ul{
+      line-height: 20px;
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+
     h1{
       text-align: center;
       font-size: 80px;
+      border-bottom: 1px gray solid;
+      margin: 0px;
+      padding: 20px;
     }
 
     a{
@@ -15,38 +55,42 @@
       text-decoration: none;
     }
 
+    body{
+      margin: 0px;
+    }
+
   </style>
 </head>
 
 <body>
   <h1><a href="index.html" style="color:hotpink;">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="html.html" class="list1"> HTML</a></li>
+      <li><a href="css.html" class="list1"> CSS
+        <ul id="ul">
+          <li><a href="box.html" style="margin-left: -5px;">css box model</a></li>
+          <li><a href="grid.html" style="margin-left: -5px;">grid</a></li>
+        </ul></a>
+      </li>
+      <li><a href="js.html" style="color:red; text-decoration:underline;" class="list1"> JavaScript </a></li>
+    </ol>
 
-  <ol>
-    <li><a href="html.html"> HTML</a></li>
-    <li><a href="css.html"> CSS
-      <ul>
-        <li>
-          <a href="box.html">css box model</a>
-        </li>
-      </ul></a>
-    </li>
-    <li><a href="js.html" style="color:red; text-decoration:underline;"> JavaScript </a></li>
-  </ol>
-
-  <h2>JavaScript</h2>
-  <p>
-    JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
-    <!--JS로 약칭되는 JavaScript는 하이레벨, 동적, 위클리타입(?), 프로토 타입 기반, 다중 패러다임 및 인터프리터 프로그래밍 언어이다-->
-    Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production.
-    <!--HTML과 CSS 외에도 JavaScript는 World Wide Web 콘텐츠 제작의 세 가지 핵심 기술 중 하나입니다.-->
-    It is used to make webpages interactive and provide online programs, including video games.
-    <!--웹 페이지를 대화식으로 만들고 비디오 게임을 포함한 온라인 프로그램을 제공하는 데 사용됩니다.-->
-    The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine.
-    <!--대부분의 웹 사이트에서이 API를 사용하고 있으며 모든 최신 웹 브라우저는 내장 된 JavaScript 엔진을 통해 플러그인을 필요로하지 않고이를 지원합니다.-->
-    Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
-    <!--여러 JavaScript엔진은 모두 ECMAScript사양을 기반으로 하는 각기 다른 JavaScript구현을 보여 주고 있으며, 일부 엔진은 ECMA이상의 추가 기능을 지원하고 있습니다.-->
-  </p>
-
-
+    <div id="article">
+      <h2>JavaScript</h2>
+      <p>
+        JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
+        <!--JS로 약칭되는 JavaScript는 하이레벨, 동적, 위클리타입(?), 프로토 타입 기반, 다중 패러다임 및 인터프리터 프로그래밍 언어이다-->
+        Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production.
+        <!--HTML과 CSS 외에도 JavaScript는 World Wide Web 콘텐츠 제작의 세 가지 핵심 기술 중 하나입니다.-->
+        It is used to make webpages interactive and provide online programs, including video games.
+        <!--웹 페이지를 대화식으로 만들고 비디오 게임을 포함한 온라인 프로그램을 제공하는 데 사용됩니다.-->
+        The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine.
+        <!--대부분의 웹 사이트에서이 API를 사용하고 있으며 모든 최신 웹 브라우저는 내장 된 JavaScript 엔진을 통해 플러그인을 필요로하지 않고이를 지원합니다.-->
+        Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+        <!--여러 JavaScript엔진은 모두 ECMAScript사양을 기반으로 하는 각기 다른 JavaScript구현을 보여 주고 있으며, 일부 엔진은 ECMA이상의 추가 기능을 지원하고 있습니다.-->
+      </p>
+    </div>
+  </div>
 </body>
 </html>

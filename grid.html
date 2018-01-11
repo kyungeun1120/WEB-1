@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>grid</title>
+    <style>
+
+    #grid {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    }
+
+    #grid ol{
+    padding-left: 44px;
+    padding-right: 15px;
+    }
+
+    #article{
+    padding: 20px;
+    }
+
+    #ul li{
+      margin-left: -15px;
+    }
+
+    .list1{
+      font-size: 20px;
+    }
+
+    ol{
+      border-right: 1px gray solid;
+      margin: 0px;
+      width: 150px;
+      padding: 25px;
+      line-height: 40px;
+    }
+
+    ul{
+      line-height: 20px;
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+
+    #exgrid{
+      border: 5px solid pink;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+
+    #exgrid2{
+      border: 5px solid orange;
+      display: grid;
+      grid-template-rows: 3fr 1fr;
+    }
+
+    #exgrid3{
+      border: 5px solid brown;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    .exdiv1{
+      border: 5px solid skyblue;
+    }
+
+    .exdiv2{
+      border: 5px solid gray;
+    }
+
+    .exdiv3{
+      border: 5px solid yellow;
+    }
+
+    a{
+      color: black;
+      text-decoration: none;
+    }
+
+    h1{
+      font-size: 80px;
+      text-align: center;
+      border-bottom: 1px gray solid;
+      margin: 0px;
+      padding: 20px;
+    }
+
+    body{
+      margin: 0px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html" style="color:hotpink">WEB</a></h1>
+
+    <div id="grid">
+      <ol>
+        <li><a href="html.html" class="list1"> HTML</a></li>
+        <li><a href="css.html" class="list1"> CSS
+          <ul id="ul">
+            <li><a href="box.html" style="margin-left: -5px">css box model</a></li>
+            <li><a href="grid.html" style="color:red; text-decoration:underline; margin-left: -5px">grid</a></li>
+          </ul></a>
+        </li>
+        <li><a href="js.html" class="list1"> JavaScript </a></li>
+      </ol>
+
+      <div id="article">
+        <div id="exgrid">
+          <div class="exdiv1">NAVIGATION</div>
+          <div class="exdiv1">ARTICLE</div>
+        </div>
+
+        <br /><br />
+
+        <div id="exgrid2">
+          <div class="exdiv2">HOUSE</div>
+          <div class="exdiv2">MOUNTAIN</div>
+        </div>
+
+        <br /><br />
+
+        <div id="exgrid3">
+          <div class="exdiv3">SCHOOL</div>
+          <div class="exdiv3">More Examples Customized list with a red left border This example demonstrates how to create a list with a red left border.Full-width bordered list This example demonstrates how to create a bordered list without bullets. All the different list-item markers for lists This example demonstrates all the different list-item markers in CSS.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
