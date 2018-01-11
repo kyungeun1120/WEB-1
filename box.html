@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>box</title>
+  <style>
+
+  a{
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 80px;
+    text-align: center;
+  }
+
+  #head1 {
+    width:auto;
+    margin: 0px;
+    color: pink;
+  }
+  /*
+  block level element(=tag) --> 차지하고 있는 칸 전체 부피
+  */
+    h2{
+      border:2px solid gray;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /*
+    inline level element --> 자기 content 만큼의 부피
+    */
+    #exam{
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html" style="color:hotpink">WEB</a></h1>
+
+  <ol>
+    <li><a href="html.html"> HTML</a></li>
+    <li><a href="css.html"> CSS
+      <ul><a href="box.html" style="color:red; text-decoration:underline">css box model</a></ul>
+    </a></li>
+    <li><a href="js.html"> JavaScript </a></li>
+  </ol>
+
+  <h2 id="head1">CSS</h2>
+  <h2>CSS</h2>
+  Cascading Style Sheets (<a href="https://www.w3schools.com/css/" id="exam">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup lanuage.
+</body>
+</html>
